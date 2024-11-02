@@ -1,0 +1,24 @@
+networks:
+  monitoring: 
+    external: true  # Use the existing "monitoring" network
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"  # Expose Nginx on port 80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf  # Use the custom Nginx configuration
+    networks:
+      - monitoring
+
+  nginx-exporter:
+    image: nginx/nginx-prometheus-exporter:latest
+    container_name: nginx-exporter
+    hostname: nginx-exporter
+    ports:
+      - "9113:9113"  # Expose the exporter on port 9113
+    command: -nginx.scrape-uri=http://nginx/status  # Define the scrape URI for Nginx status
+    networks:
+      - monitoring
