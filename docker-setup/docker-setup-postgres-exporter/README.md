@@ -12,7 +12,7 @@ Run the docker-comose.yml file to provision the container or Grafana and Prometh
 cd docker-setup-postgres-exporter
 docker-compose up -d
 
-### Start the Mysql and Mysql Exporter
+### Start the Postgres and Postgres Exporter
 
 cd postgres-exporter
 docker-compose up -d
