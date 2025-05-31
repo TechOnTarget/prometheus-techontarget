@@ -9,13 +9,26 @@ Docker and Docker compose should be installed
 
 Run the docker-comose.yml file to provision the container or Grafana and Prometheus.
 
-cd docker-setup-mysql 
+cd docker-setup-postgres-exporter
 docker-compose up -d
 
 ### Start the Mysql and Mysql Exporter
 
-cd dmysql-and-mysqlexporter
+cd postgres-exporter
 docker-compose up -d
 
 ### View the Data in Dashboard
-Use Public Dashboard Id - 14057 Reference - Link https://grafana.com/grafana/dashboards/14057-mysql/
+PostgreSQL Overview Dashboard
+Dashboard ID: 9628
+Source: Grafana.com
+Features:
+
+Connections, transactions, locks
+
+Buffer cache hit ratios
+
+Table statistics
+
+Disk & I/O usage
+
+https://grafana.com/grafana/dashboards/9628-postgresql-database/
