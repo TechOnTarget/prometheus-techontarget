@@ -1,4 +1,7 @@
-# Prometheus
+# Mysql Monitoring via Mysql Exporter
+
+[![PostgreSQL](mysql.png)](https://youtu.be/x8uAQfbeJ-8)
+
 
 ### Prerequisitis
 

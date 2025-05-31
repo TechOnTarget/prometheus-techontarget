@@ -1,4 +1,6 @@
-# Prometheus
+# Postgres Monitoring via Postgres Exporter
+
+[![PostgreSQL](postgres.png)](https://youtu.be/O0Xei_MRuYM)
 
 ### Prerequisitis
 
@@ -32,3 +34,5 @@ Table statistics
 Disk & I/O usage
 
 https://grafana.com/grafana/dashboards/9628-postgresql-database/
+
+
